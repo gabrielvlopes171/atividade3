@@ -1,0 +1,35 @@
+    /* Estilos para index.html */
+h1 {
+    color: blue;
+    font-size: 2em;
+}
+p {
+    color: gray;
+}
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Estilos para form.html */
+fieldset {
+    border: 2px solid #333;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}

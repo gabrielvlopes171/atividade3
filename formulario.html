@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Registro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Título principal da página -->
+    <h1>Formulário de Registro para o Workshop</h1>
+    <form action="#" method="post">
+        <!-- Seção de Informações Pessoais -->
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="first_name">Nome:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <label for="last_name">Sobrenome:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone">
+        </fieldset>
+        <!-- Seção de Endereço -->
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="address">Endereço:</label>
+            <input type="text" id="address" name="address">
+            <label for="city">Cidade:</label>
+            <input type="text" id="city" name="city">
+            <label for="state">Estado:</label>
+            <select id="state" name="state">
+                <option value="Br">Brasilia</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+            <label for="zip">CEP:</label>
+            <input type="text" id="zip" name="zip">
+            <label for="country">País:</label>
+            <select id="country" name="country">
+                <option value="BR">Brasil</option>
+                <option value="CA">Canadá</option>
+                <option value="UK">Reino Unido</option>
+            </select>
+        </fieldset>
+        <!-- Seção de Preferências do Workshop -->
+        <fieldset>
+            <legend>Preferências do Workshop</legend>
+            <p>Preferência de Sessão:</p>
+            <input type="radio" id="morning" name="session" value="morning">
+            <label for="morning">Manhã</label>
+            <input type="radio" id="afternoon" name="session" value="afternoon">
+            <label for="afternoon">Tarde</label>
+            <input type="radio" id="evening" name="session" value="evening">
+            <label for="evening">Noite</label>
+            <p>Tópicos de Interesse:</p>
+            <input type="checkbox" id="web_dev" name="topics" value="web_dev">
+            <label for="web_dev">Desenvolvimento Web</label>
+            <input type="checkbox" id="data_science" name="topics" value="data_science">
+            <label for="data_science">Ciência de Dados</label>
+            <input type="checkbox" id="ai" name="topics" value="ai">
+            <label for="ai">Inteligência Artificial</label>
+        </fieldset>
+        <!-- Seção de Informações Adicionais -->
+        <fieldset>
+            <legend>Informações Adicionais</legend>
+            <p>Restrições Alimentares:</p>
+            <input type="checkbox" id="vegetarian" name="diet" value="vegetarian">
+            <label for="vegetarian">Vegetariano</label>
+            <input type="checkbox" id="vegan" name="diet" value="vegan">
+            <label for="vegan">Vegano</label>
+            <input type="checkbox" id="gluten_free" name="diet" value="gluten_free">
+            <label for="gluten_free">Sem Glúten</label>
+            <label for="tshirt">Tamanho da Camiseta:</label>
+            <select id="tshirt" name="tshirt">
+                <option value="P">Pequeno</option>
+                <option value="M">Médio</option>
+                <option value="G">Grande</option>
+                <option value="GG">Extra Grande</option>
+            </select>
+            <label for="hear_about">Como soube do evento?</label>
+            <select id="hear_about" name="hear_about">
+                <option value="social_media">Redes Sociais</option>
+                <option value="friend">Amigo</option>
+                <option value="advertisement">Anúncio</option>
+                <option value="other">Outro</option>
+            </select>
+            <label for="comments">Comentários ou Perguntas:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </fieldset>
+        <!-- Botão de envio do formulário -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
